@@ -1,9 +1,8 @@
-// import React from 'react'
 import { render, screen, getDefaultNormalizer } from '@testing-library/react'
 import userEvent from "@testing-library/user-event";
 import { Provider } from 'react-redux';
-import { store } from './app/store';
-import App from './App';
+import { store } from '../app/store';
+import App from '../App';
 
 test('first render', () => {
   // const { getByText } = render(
@@ -126,4 +125,3 @@ test('user action', async () => {
   expect(plusButton.previousElementSibling?.textContent).toBe("18")  //from 18 (no change)
 
 })
-

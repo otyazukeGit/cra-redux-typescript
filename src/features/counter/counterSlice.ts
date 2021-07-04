@@ -7,7 +7,7 @@ export interface CounterState {
   status: 'idle' | 'loading' | 'failed';
 }
 
-const initialState: CounterState = {
+export const initialState: CounterState = {
   value: 0,
   status: 'idle',
 };
