@@ -15,7 +15,8 @@ test('first render', () => {
   expect(screen.getByText('-')).toBeInTheDocument()
   expect(screen.getByRole('button', {name: 'Decrement value'})).toBeInTheDocument()
 
-  expect(screen.getByText('0')).toBeInTheDocument()
+  const minusButton = screen.getByRole('button', {name: 'Decrement value'})
+  expect(minusButton.nextElementSibling?.textContent).toBe("0")
 
   expect(screen.getByText('+')).toBeInTheDocument()
   expect(screen.getByRole('button', {name: 'Increment value'})).toBeInTheDocument()
@@ -41,7 +42,6 @@ test('first render', () => {
   // expect(Element).toBeInTheDocument()
   expect(_getByNestedText('Edit src\/App\.tsx and save to reload\.')).toBeInTheDocument();
   
-  expect(screen.getByText(/Learn/)).toBeInTheDocument();
   expect(_getByNestedText('Learn React, Redux, Redux Toolkit, and React Redux')).toBeInTheDocument();
 
   expect(screen.getByText('React').closest('a')).toHaveAttribute('href', 'https://reactjs.org/')
@@ -63,7 +63,6 @@ const _getByNestedText = (text: string): HTMLElement => {
   return screen.getByText(( _content: string, node: Element | null ): boolean => {
     return node ? regex.test(node.textContent || '') : false
   })
-
 }
 
 
