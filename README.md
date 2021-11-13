@@ -1,4 +1,21 @@
+# What this project for?
+To try out the Redux Tools
+
+<img width="705" alt="cra_redux_typescript_image" src="https://user-images.githubusercontent.com/31443408/141608052-549b1fda-2c49-4493-879f-74830276211f.png">
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+
+## Thoughts on Use
+- The amount of code to build Redux has been reduced and refreshed.
+- Store (immutable) updates can be written as mutable by the Immer library and easy to understand.
+- I'd like to compare the Redux Tools with react query.
+
+## References
+- [Redux Toolkit](https://redux-toolkit.js.org/)
+- [cra-template-redux-typescript](https://github.com/reduxjs/cra-template-redux-typescript)
+- [Deep Dive into Redux Toolkit with React - Complete Guide](https://www.youtube.com/watch?v=9lCmbth63k0)
+
+---
 
 ## Available Scripts
 
