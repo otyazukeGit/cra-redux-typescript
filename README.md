@@ -10,6 +10,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Store (immutable) updates can be written as mutable by the Immer library and easy to understand.
 - I'd like to compare the Redux Tools with react query.
 
+## Project Status
+1. Initial setup of Redux Tools
+2. Add test in Jest
+
 ## References
 - [Redux Toolkit](https://redux-toolkit.js.org/)
 - [cra-template-redux-typescript](https://github.com/reduxjs/cra-template-redux-typescript)
